@@ -1,0 +1,21 @@
+CREATE DATABASE Menu_Ordering;
+
+USE Menu_Ordering;
+
+CREATE TABLE menu_ordering_Stock (
+    ID INT PRIMARY KEY IDENTITY,
+    Produit NVARCHAR(MAX),
+    Prix DECIMAL
+);
+
+CREATE TABLE Services (
+    ServiceID INT PRIMARY KEY IDENTITY,
+    ServiceName NVARCHAR(MAX),
+    Price DECIMAL
+);
+
+CREATE TABLE Users (
+    UserID INT PRIMARY KEY IDENTITY,
+    Username NVARCHAR(MAX),
+    PasswordHash NVARCHAR(MAX)
+);
